@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "06ca200f-2acd-49f1-b994-4c25e1861a06": {
+      "ProjectGuid": "06ca200f-2acd-49f1-b994-4c25e1861a06",
+      "DisplayName": "Extractor",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "5d53fd27-d116-4396-a22a-aa8f5720d7df": {
+      "ProjectGuid": "5d53fd27-d116-4396-a22a-aa8f5720d7df",
+      "DisplayName": "APIBusqueda",
+      "ColorIndex": 1
+    },
+    "3ee53bbf-97aa-4813-b072-e4cd2e72999f": {
+      "ProjectGuid": "3ee53bbf-97aa-4813-b072-e4cd2e72999f",
+      "DisplayName": "EUSWrapper",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

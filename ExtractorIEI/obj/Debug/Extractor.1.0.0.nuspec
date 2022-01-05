@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Extractor</id>
+    <version>1.0.0</version>
+    <authors>Extractor</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="ChoETL.JSON" version="1.2.1.28" exclude="Build,Analyzers" />
+        <dependency id="MySql.Data" version="8.0.27" exclude="Build,Analyzers" />
+        <dependency id="MySqlConnector" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver" version="4.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Administrador.WIN-2O4P6U7CI32\Source\Repos\Asefron29\ExtractorIEI\bin\Debug\netcoreapp3.1\Extractor.runtimeconfig.json" target="lib\netcoreapp3.1\Extractor.runtimeconfig.json" />
+    <file src="C:\Users\Administrador.WIN-2O4P6U7CI32\Source\Repos\Asefron29\ExtractorIEI\bin\Debug\netcoreapp3.1\Extractor.dll" target="lib\netcoreapp3.1\Extractor.dll" />
+  </files>
+</package>
