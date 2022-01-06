@@ -7,7 +7,7 @@ namespace EUSWrapper.Logic
     {
         public static List<BibliotecaGEN> GetBibliotecas()
         {
-            string jsonString = File.ReadAllText("C:\\Users\\Administrador.WIN-2O4P6U7CI32\\source\\repos\\Asefron29\\ExtractorIEI\\EntradasDemo\\EUS.json");
+            string jsonString = File.ReadAllText(".\\Resources\\EUSLong.json");
             List<BibliotecaEUS> bibliotecasEUS = JsonSerializer.Deserialize<List<BibliotecaEUS>>(jsonString);
             List<BibliotecaGEN> myBibliotecas = new List<BibliotecaGEN>();
             BibliotecaGEN bibliotecaGEN = new BibliotecaGEN();
