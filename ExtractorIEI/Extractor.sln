@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extractor", "Extractor.cspr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIBusqueda", "..\APIBusqueda\APIBusqueda.csproj", "{5D53FD27-D116-4396-A22A-AA8F5720D7DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EUSWrapper", "..\WrapperAPI\EUSWrapper.csproj", "{3EE53BBF-97AA-4813-B072-E4CD2E72999F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EUSWrapper", "..\WrapperAPI\EUSWrapper.csproj", "{3EE53BBF-97AA-4813-B072-E4CD2E72999F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CATWrapper", "..\WrapperAPI2\CATWrapper.csproj", "{E6BCE760-8AE9-429B-9B16-F0A00487AA5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3EE53BBF-97AA-4813-B072-E4CD2E72999F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EE53BBF-97AA-4813-B072-E4CD2E72999F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EE53BBF-97AA-4813-B072-E4CD2E72999F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BCE760-8AE9-429B-9B16-F0A00487AA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BCE760-8AE9-429B-9B16-F0A00487AA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BCE760-8AE9-429B-9B16-F0A00487AA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BCE760-8AE9-429B-9B16-F0A00487AA5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
