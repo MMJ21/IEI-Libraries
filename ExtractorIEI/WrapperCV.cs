@@ -15,6 +15,8 @@ namespace Extractor
 {
     public class WrapperCV
     {
+        static readonly ChromeDriver driver = new ChromeDriver();        
+
         public static void ExtractCV(string originFilePath, string jsonDestinyFilePath, string destinyFilePath)
         {
             Console.WriteLine("::EXTRACTING VAL LIBRARIES::");
@@ -39,8 +41,6 @@ namespace Extractor
             string bibliotecaGenJsonString = string.Empty;
 
             Console.WriteLine(":USING SELENIUM TO GET COORDINATES FOR VAL LIBRARIES, THIS MIGHT TAKE A WHILE:");
-            ChromeDriver driver = new ChromeDriver();
-            driver.Url = "https://www.coordenadas-gps.com/";
             Thread.Sleep(5000);
 
             var options = new JsonSerializerOptions
@@ -63,6 +63,7 @@ namespace Extractor
                 bibliotecaGEN.codigoProvincia = biblioteca.COD_PROVINCIA; //hecho
                 try
                 {
+                    /*
                     driver.FindElement(By.Id("address")).Clear();
                     Thread.Sleep(1000);
                     driver.FindElement(By.Id("address")).SendKeys(bibliotecaGEN.direccion.Split("Nº")[0] + ", " + bibliotecaGEN.codigoPostal + ", España");
@@ -70,8 +71,14 @@ namespace Extractor
                     driver.FindElement(By.XPath("//button[text()= " + '\u0022'.ToString() + "Obtener Coordenadas GPS" + '\u0022'.ToString() + "]")).Click();
                     Thread.Sleep(1000);
 
+                    
                     bibliotecaGEN.longitud = driver.FindElement(By.Id("latitude")).GetAttribute("value");
                     bibliotecaGEN.latitud = driver.FindElement(By.Id("longitude")).GetAttribute("value");
+                    */
+
+                    string[] coordenadas = buscarCoordenadasGPS(bibliotecaGEN);
+                    bibliotecaGEN.longitud = coordenadas[0];
+                    bibliotecaGEN.latitud = coordenadas[1];
                 }
                 catch (UnhandledAlertException e)
                 {
@@ -88,6 +95,22 @@ namespace Extractor
             resultJson.TrimEnd('\n');
             resultJson = "[" + resultJson.TrimEnd(new char[] { ',', ' ',  '\n'}) + "]";
             File.WriteAllText(destinyFilePath, resultJson);
+        }
+
+        private static string[] buscarCoordenadasGPS(BibliotecaGEN bibliotecaGEN)
+        {
+            driver.Url = "https://maps.google.com";
+            driver.ExecuteScript("window.scrollBy(0,1000)");
+
+            driver.FindElement(By.XPath("/html/body/c-wiz/div/div/div/div[2]/div/div[4]/form/div"))?.Click();
+            Thread.Sleep(1000);
+            driver.FindElement(By.XPath("html/body/div[3]/div[9]/div[2]/div/div/div/div[2]/form/")).SendKeys(bibliotecaGEN.direccion.Split("Nº")[0] + ", " + bibliotecaGEN.codigoPostal + ", España" + Keys.Enter);
+
+            string[] coordenadas = new string[2];
+            coordenadas[0] = driver.Url.Split('@')[1].Split(',')[0];
+            coordenadas[1] = driver.Url.Split('@')[1].Split(',')[1].Split('/')[0];
+
+            return coordenadas;
         }
 
         public static string Descapitalizar(string srt)
