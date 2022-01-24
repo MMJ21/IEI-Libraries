@@ -20,7 +20,17 @@
       "ProjectGuid": "3ee53bbf-97aa-4813-b072-e4cd2e72999f",
       "DisplayName": "EUSWrapper",
       "ColorIndex": 2
+    },
+    "e6bce760-8ae9-429b-9b16-f0a00487aa5a": {
+      "ProjectGuid": "e6bce760-8ae9-429b-9b16-f0a00487aa5a",
+      "DisplayName": "CATWrapper",
+      "ColorIndex": 3
+    },
+    "512fce60-e472-45ab-b459-4b66e6d82719": {
+      "ProjectGuid": "512fce60-e472-45ab-b459-4b66e6d82719",
+      "DisplayName": "CVWrapper",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

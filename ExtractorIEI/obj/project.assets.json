@@ -2227,19 +2227,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\Asefron29\\ExtractorIEI\\Extractor.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\ExtractorIEI\\Extractor.csproj",
       "projectName": "Extractor",
-      "projectPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\Asefron29\\ExtractorIEI\\Extractor.csproj",
-      "packagesPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\Asefron29\\ExtractorIEI\\obj\\",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\ExtractorIEI\\Extractor.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\ExtractorIEI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
