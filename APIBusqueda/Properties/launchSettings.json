@@ -10,10 +10,10 @@
   },
   "profiles": {
     "APIBusqueda": {
-      "commandName": "Project",
+      "commandName": "Busqueda",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "swagger",
+      "launchUrl": "api/bibliotecas",
       "applicationUrl": "https://localhost:7218;http://localhost:5218",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
