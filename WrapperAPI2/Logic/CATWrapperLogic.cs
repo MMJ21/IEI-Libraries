@@ -12,10 +12,11 @@ namespace CATWrapper.Logic
             document.Load(".\\Resources\\CATDemo.xml");
             XmlNode responseNode = document.DocumentElement;
             List<BibliotecaGEN> myBibliotecas = new List<BibliotecaGEN>();
-            BibliotecaGEN bibliotecaGEN = new BibliotecaGEN();
+            BibliotecaGEN bibliotecaGEN;
 
             foreach (XmlNode node in responseNode.ChildNodes)
             {
+                bibliotecaGEN = new BibliotecaGEN();
                 bibliotecaGEN.nombre = (node.SelectSingleNode("nom") != null ? node.SelectSingleNode("nom").InnerText : "Not found").Replace("\'", "´");
                 bibliotecaGEN.tipo = (node.SelectSingleNode("categoria") != null ? GetTipo(node.SelectSingleNode("categoria").InnerText) : "Not found").Replace("\'", "´");
                 bibliotecaGEN.direccion = (node.SelectSingleNode("via") != null ? node.SelectSingleNode("via").InnerText : "Not found").Replace("\'", "´");
