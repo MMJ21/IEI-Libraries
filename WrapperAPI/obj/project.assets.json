@@ -9618,19 +9618,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\WrapperAPI\\EUSWrapper.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\WrapperAPI\\EUSWrapper.csproj",
       "projectName": "EUSWrapper",
-      "projectPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\WrapperAPI\\EUSWrapper.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\WrapperAPI\\obj\\",
+      "projectPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\WrapperAPI\\EUSWrapper.csproj",
+      "packagesPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\WrapperAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

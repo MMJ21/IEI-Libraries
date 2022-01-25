@@ -2404,19 +2404,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\APIBusqueda\\APIBusqueda.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\APIBusqueda\\APIBusqueda.csproj",
       "projectName": "APIBusqueda",
-      "projectPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\APIBusqueda\\APIBusqueda.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\APIBusqueda\\obj\\",
+      "projectPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\APIBusqueda\\APIBusqueda.csproj",
+      "packagesPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\APIBusqueda\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2430,8 +2430,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\ExtractorIEI\\Extractor.csproj": {
-              "projectPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\ExtractorIEI\\Extractor.csproj"
+            "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\ExtractorIEI\\Extractor.csproj": {
+              "projectPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\ExtractorIEI\\Extractor.csproj"
             }
           }
         }

@@ -10,7 +10,7 @@
   },
   "profiles": {
     "APIBusqueda": {
-      "commandName": "Busqueda",
+      "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "api/bibliotecas",

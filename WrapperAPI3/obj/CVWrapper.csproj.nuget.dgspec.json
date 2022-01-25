@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\WrapperAPI3\\CVWrapper.csproj": {}
+    "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\WrapperAPI3\\CVWrapper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\WrapperAPI3\\CVWrapper.csproj": {
+    "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\WrapperAPI3\\CVWrapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\WrapperAPI3\\CVWrapper.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\WrapperAPI3\\CVWrapper.csproj",
         "projectName": "CVWrapper",
-        "projectPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\WrapperAPI3\\CVWrapper.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Source\\Repos\\IEI-Libraries\\WrapperAPI3\\obj\\",
+        "projectPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\WrapperAPI3\\CVWrapper.csproj",
+        "packagesPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\Source\\Repos\\MMJ21\\IEI-Libraries\\WrapperAPI3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrador.WIN-2O4P6U7CI32\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
