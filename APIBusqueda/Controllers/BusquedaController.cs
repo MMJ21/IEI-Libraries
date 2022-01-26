@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using MySqlConnector;
 using System.Net.Http.Headers;
@@ -7,6 +8,7 @@ using System.Text.Json.Serialization;
 
 namespace APIBusqueda.Controllers
 {
+    [EnableCors("_myAllowSpecificOrigins")]
     [ApiController]
     [Route("api/obtenerBibliotecas")]
     public class BusquedaController : ControllerBase
