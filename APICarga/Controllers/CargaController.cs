@@ -1,18 +1,21 @@
 ﻿using APICarga.Logic;
 using APICarga.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http.Headers;
 using System.Text.Json;
 
 namespace APICarga.Controllers
 {
+    [EnableCors("_myAllowSpecificOrigins")]
     [Route("carga/bibliotecas")]
     [ApiController]
+
     public class CargaController : Controller
     {
         // POST: carga/bibliotecas
         [HttpPost]
-        public async Task<string> Post(BibliotecasSeleccionadas bibl)
+        public async Task<JsonResult> Post(BibliotecasSeleccionadas bibl)
         {
             string message = string.Empty;
             HttpClient client = new HttpClient();
@@ -39,7 +42,7 @@ namespace APICarga.Controllers
                         Console.WriteLine(result);
                         bibliotecasCAT = JsonSerializer.Deserialize<List<BibliotecaGEN>>(result);
                     }
-                    message += "Cat successful";
+                    message += "Completada carga de bibliotecas de Catalunya.\n";
 
                     bibliotecasAnyadir.AddRange(bibliotecasCAT);
                 }
@@ -69,7 +72,7 @@ namespace APICarga.Controllers
                     {
                         bibliotecasEUS = JsonSerializer.Deserialize<List<BibliotecaGEN>>(result);
                     }
-                    message += "Eus successful";
+                    message += "Completada carga de bibliotecas de Euskadi.\n";
 
                     bibliotecasAnyadir.AddRange(bibliotecasEUS);
                 }
@@ -99,7 +102,7 @@ namespace APICarga.Controllers
                     {
                         bibliotecasVAL = JsonSerializer.Deserialize<List<BibliotecaGEN>>(result);
                     }
-                    message += "Val successful";
+                    message += "Completada carga de bibliotecas de Comunidad Valenciana.\n";
 
                     bibliotecasAnyadir.AddRange(bibliotecasVAL);
                 }
@@ -111,9 +114,7 @@ namespace APICarga.Controllers
 
             CargaLogic.CargarBibliotecas(bibliotecasAnyadir);
 
-            Console.WriteLine(message);
-
-            return message;
+            return new JsonResult(message);
         }
     }
 }

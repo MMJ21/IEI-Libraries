@@ -86,7 +86,6 @@ namespace APICarga.Logic
             {
                 Console.WriteLine(e.Message);
             }
-            Console.ReadLine();
         }
 
         private static void DropTableFromDatabase()
