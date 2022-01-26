@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 namespace APIBusqueda.Controllers
 {
     [ApiController]
-    [Route("api/bibliotecas")]
+    [Route("api/obtenerBibliotecas")]
     public class BusquedaController : ControllerBase
     {
         public MySqlConnection connector;
@@ -54,6 +54,7 @@ namespace APIBusqueda.Controllers
             };
 
             string jsonString = "";
+            var response = new List<Biblioteca>();
 
             if (reader.HasRows){
                 while (reader.Read()){
@@ -69,21 +70,20 @@ namespace APIBusqueda.Controllers
                             reader.GetString(7),
                             reader.GetString(8)
                     );
+                    jsonString += JsonSerializer.Serialize(biblioteca, options)+ ",";
+                    response.Add(biblioteca);
 
-                    jsonString += JsonSerializer.Serialize(biblioteca, options)+",";
-                    jsonString.TrimEnd('\n');
                 }
             }
            
             reader.Close();
             connector.Close();
 
-            return new JsonResult(jsonString);
+            return new JsonResult(response);
 
-            
-   
         }
 
+        // Clase adicional que contiene los datos de entrada para POST
         public class Rootobject
         { 
            public string localidad { get; set; }

@@ -1,23 +1,23 @@
-﻿{
+{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:47935",
-      "sslPort": 44371
+      "applicationUrl": "http://localhost:53265/",
+      "sslPort": 44309
     }
   },
   "profiles": {
     "APIBusqueda": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "launchUrl": "api/bibliotecas",
-      "applicationUrl": "https://localhost:7218;http://localhost:5218",
+      "launchBrowser": false,
+      "launchUrl": "api/obtenerBibliotecas",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "https://localhost:7218;http://localhost:5218",
+      "dotnetRunMessages": true
     },
     "IIS Express": {
       "commandName": "IISExpress",
