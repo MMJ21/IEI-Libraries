@@ -42,7 +42,7 @@ namespace APICarga.Controllers
                         Console.WriteLine(result);
                         bibliotecasCAT = JsonSerializer.Deserialize<List<BibliotecaGEN>>(result);
                     }
-                    message += "Completada carga de bibliotecas de Catalunya.\n";
+                    message += "Completada carga de bibliotecas de Catalunya.<br>";
 
                     bibliotecasAnyadir.AddRange(bibliotecasCAT);
                 }
@@ -72,7 +72,7 @@ namespace APICarga.Controllers
                     {
                         bibliotecasEUS = JsonSerializer.Deserialize<List<BibliotecaGEN>>(result);
                     }
-                    message += "Completada carga de bibliotecas de Euskadi.\n";
+                    message += "Completada carga de bibliotecas de Euskadi.<br>";
 
                     bibliotecasAnyadir.AddRange(bibliotecasEUS);
                 }
@@ -102,7 +102,7 @@ namespace APICarga.Controllers
                     {
                         bibliotecasVAL = JsonSerializer.Deserialize<List<BibliotecaGEN>>(result);
                     }
-                    message += "Completada carga de bibliotecas de Comunidad Valenciana.\n";
+                    message += "Completada carga de bibliotecas de Comunidad Valenciana.<br>";
 
                     bibliotecasAnyadir.AddRange(bibliotecasVAL);
                 }

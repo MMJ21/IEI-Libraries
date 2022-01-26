@@ -16,10 +16,12 @@ namespace CVWrapper.Logic
 {
     public static class CVWrapperLogic
     {
-        static readonly ChromeDriver driver = new ChromeDriver();
+        static ChromeDriver driver;
         static IWebElement webElement = null;
         public static List<BibliotecaGEN> GetBibliotecas()
         {
+            driver = new ChromeDriver();
+
             string csv = File.ReadAllText(".\\Resources\\CVDemo.csv");
 
             StringBuilder sb = new StringBuilder();
