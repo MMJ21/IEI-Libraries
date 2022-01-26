@@ -54,7 +54,7 @@ function App() {
       Eus: eusState, 
       Val: valState
     } 
-    fetch('https://localhost:7272/carga/bibliotecas', {
+    fetch('https://localhost:7272/api/carga/cargarBibliotecas', {
       method: 'POST',      
       body: JSON.stringify(bodyObject),
       headers: {

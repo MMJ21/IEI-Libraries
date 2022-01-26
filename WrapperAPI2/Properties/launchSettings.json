@@ -13,7 +13,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "catwrapper/cat",
+      "launchUrl": "api/catwrapper/obtenerBibliotecasCat",
       "applicationUrl": "https://localhost:7086",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -22,7 +22,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "catwrapper/cat",
+      "launchUrl": "api/catwrapper/obtenerBibliotecasCat",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

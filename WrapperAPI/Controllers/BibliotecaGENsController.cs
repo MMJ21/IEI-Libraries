@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EUSWrapper.Controllers
 {
-    [Route("euswrapper/eus")]
+    [Route("api/euswrapper/obtenerBibliotecasEus")]
     [ApiController]
     public class BibliotecaGENsController : ControllerBase
     {

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CVWrapper.Controllers
 {
-    [Route("cvwrapper/cv")]
+    [Route("api/cvwrapper/obtenerBibliotecasCV")]
     [ApiController]
     public class BibliotecaGENsController : ControllerBase
     {

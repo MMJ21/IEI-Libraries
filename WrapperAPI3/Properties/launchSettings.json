@@ -13,7 +13,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "cvwrapper/cv",
+      "launchUrl": "api/cvwrapper/obtenerBibliotecasCV",
       "applicationUrl": "https://localhost:7017",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -22,7 +22,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "catwrapper/cat",
+      "launchUrl": "api/cvwrapper/obtenerBibliotecasCV",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -8,7 +8,7 @@ using System.Text.Json;
 namespace APICarga.Controllers
 {
     [EnableCors("_myAllowSpecificOrigins")]
-    [Route("carga/bibliotecas")]
+    [Route("api/carga/cargarBibliotecas")]
     [ApiController]
 
     public class CargaController : Controller
@@ -27,7 +27,7 @@ namespace APICarga.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                Task<HttpResponseMessage> responseTask = client.GetAsync("catwrapper/cat");
+                Task<HttpResponseMessage> responseTask = client.GetAsync("api/catwrapper/obtenerBibliotecasCat");
                 responseTask.Wait();
 
                 HttpResponseMessage response = responseTask.Result;
@@ -58,7 +58,7 @@ namespace APICarga.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                Task<HttpResponseMessage> responseTask = client.GetAsync("euswrapper/eus");
+                Task<HttpResponseMessage> responseTask = client.GetAsync("api/euswrapper/obtenerBibliotecasEus");
                 responseTask.Wait();
 
                 HttpResponseMessage response = responseTask.Result;
@@ -88,7 +88,7 @@ namespace APICarga.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                Task<HttpResponseMessage> responseTask = client.GetAsync("cvwrapper/cv");
+                Task<HttpResponseMessage> responseTask = client.GetAsync("api/cvwrapper/obtenerBibliotecasCV");
                 responseTask.Wait();
 
                 HttpResponseMessage response = responseTask.Result;

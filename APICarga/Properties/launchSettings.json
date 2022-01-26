@@ -13,7 +13,7 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "carga/bibliotecas",
+      "launchUrl": "api/carga/cargarBibliotecas",
       "applicationUrl": "https://localhost:7272",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -22,7 +22,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "carga/bibliotecas",
+      "launchUrl": "api/carga/cargarBibliotecas",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CATWrapper.Controllers
 {
-    [Route("catwrapper/cat")]
+    [Route("api/catwrapper/obtenerBibliotecasCat")]
     [ApiController]
     public class BibliotecaGENsController : ControllerBase
     {
